@@ -3,10 +3,10 @@ void read_input_data(char* input_buf, byte &command_size){
     boolean continue_permit = 1;
     byte i = 0;
     char current_symbol = ' ';
-  //  delay(decode_buffer_size/12 + 1); // минимальное время получения 48 бит -- 4. 1 миллисекунда = 12 символов +-. 
-    while (Serial.available() > 0) { // цикл записи данных в буфер 
+  //  delay(decode_buffer_size/12 + 1);// minimum acquisition time 48 bits -- 4. 1 millisecond = 12 characters +-.
+    while (Serial.available() > 0) { // cycle of writing data to the buffer
       if(i == input_buffer_size) break;
-      current_symbol = Serial.read();  // считывание
+      current_symbol = Serial.read();  
       if(current_symbol == '<') {
         while (Serial.available() > 0) {
             current_symbol = Serial.read();   

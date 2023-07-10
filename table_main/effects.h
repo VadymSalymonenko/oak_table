@@ -37,6 +37,10 @@ enum {
 #define SCN_MAX_BRIGHTNESS_LOW 100
 #define SCN_COLORS_NUM 4
 
+
+#define tap_game_1_LOOSE_LIM 10
+
+
 mData* color_palette;
 int counter = 0;
 

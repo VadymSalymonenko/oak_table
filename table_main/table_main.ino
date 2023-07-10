@@ -32,8 +32,8 @@ void setup() {
     attachInterrupt(5, powerOff, FALLING);
 
     strip.setBrightness(200);
-    strip.oneLedIdle = 240; // сила тока в холостом режиме (мкА)
-    strip.oneLedMax = 28;   // сила тока в рабочем режиме (мА)
+    strip.oneLedIdle = 240; // no-load current (µA)
+    strip.oneLedMax = 28;   // operating current (mA)
     
     for(int i = 0; i < TABLE_HEIGHT; i++){ 
         pinMode(tranzistors_line[i],OUTPUT);

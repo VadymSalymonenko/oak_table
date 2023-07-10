@@ -67,13 +67,13 @@ microLED<TABLE_HEIGHT * TABLE_WIDTH, STRIP_PIN, MLED_NO_CLOCK, LED_WS2818, ORDER
     unsigned long lastTimeDebug = 0;
 #endif
 
-struct command { // создаём ярлык myStruct
+struct command { 
   char* request_number; 
   byte embedded_command_number;
   char* arguments_str;
 };
 
-struct effect_info { // создаём ярлык myStruct
+struct effect_info { 
   byte effect_num; 
 
   byte color;
@@ -85,10 +85,10 @@ struct effect_info { // создаём ярлык myStruct
 effect_info currentMode;
 boolean remote_controler_changes = false;
                                      //  --0---1---2---3---4---5---6---7---8--
-byte tranzistors_line [TABLE_HEIGHT]    = {47, 46, 49, 48, 51, 50, 53, 52}; // пины подключения транзисторов отвечающих за определённую линию
+byte tranzistors_line [TABLE_HEIGHT]    = {47, 46, 49, 48, 51, 50, 53, 52};  // pins for connecting transistors responsible for a specific line
 
                                      // --0--1--2--3--4--5--6--7--8--9--10--11--12--
-byte ports_vertical_lines[TABLE_WIDTH] = {33,30,31,28,29,26,27,24,25,22,23}; // пины для считывания значений вертикалей
+byte ports_vertical_lines[TABLE_WIDTH] = {33,30,31,28,29,26,27,24,25,22,23}; // pins for reading vertical values
 
 
 
