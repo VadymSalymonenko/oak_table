@@ -61,6 +61,7 @@ void drawing_mode(){
       if(current_line == TABLE_HEIGHT-1 ){
           strip.show();
       }
+	  delay(5); // git test.
       delay(2);
 }
 
