@@ -61,9 +61,9 @@ void drawing_mode(){
       if(current_line == TABLE_HEIGHT-1 ){
           strip.show();
       }
-	  if(current_line == TABLE_HEIGHT-1){
-		  delay(5); // git merge test;
-	  }
+<<<<<<< HEAD
+	  delay(1); // git merge test -- resolving;
+>>>>>>> test
       delay(2);
 }
 
